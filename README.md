@@ -4,8 +4,6 @@ Mockeri makes data mocking for spring-data-jpa applications easier than ever bef
 
 * [Introduction](#introduction)
 * [Installation](#installation)
-  - [Maven](#maven)
-  - [Gradle](#gradle)
 * [Requirements](#requirements)
 * [Activation](#activation)
 * [Hello world](#hello-world)
@@ -20,41 +18,13 @@ Mockeri makes data mocking for spring-data-jpa applications easier than ever bef
 Mockeri expedites API development by simplifying the process of populating a given database with relevant, easily customizable mock data. With Mockeri employed, you can manually interrogate, or run integration tests against an API in development without the hassle of populating the database with enough mock data to properly simulate the APIs intended range of functionality. All that is required is a properly annotated data model.  
 
 ## Installation
-Mockeri can be installed using [jitpack](https://jitpack.io/), as follows:
-#### Maven
-First add the [jitpack](https://jitpack.io/) repository:
-```
-<repositories>
-	<repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
-</repositories>
-```
-Then add the Mockeri dependecy:
+Mockeri is available on maven central:
 ```
 <dependency>
-	<groupId>com.github.sindaryn</groupId>
-		<artifactId>mockeri</artifactId>
-	<version>${mockeri.version}</version>
+    <groupId>org.sindaryn</groupId>
+        <artifactId>mockeri</artifactId>
+    <version>0.0.1</version>
 </dependency>
-```
-The "version" here is equivalent to the shortened (first 7 digits of the) commit hash. Simply copy and paste the latest one. Same goes for gradle, etc.
-#### Gradle
-First add the [jitpack](https://jitpack.io/) repository:
-```
-allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
-}
-```
-Then add the Mockeri dependecy:
-```
-dependencies {
-	implementation 'com.github.sindaryn:mockeri:<version>'
-}
 ```
 
 ### Requirements
