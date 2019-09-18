@@ -15,7 +15,7 @@
     <version>0.0.1</version>
 
     <properties>
-        <apifi.version>2f1c02c</apifi.version>
+        <apifi.version>9365e6f</apifi.version>
         <apache-commons-lang.version>2.6</apache-commons-lang.version>
         <invitrode.version>12e5d68</invitrode.version>
         <javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>
@@ -52,7 +52,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.sindaryn</groupId>
+            <groupId>com.github.Dave1324</groupId>
             <artifactId>apifi</artifactId>
             <version>${apifi.version}</version>
         </dependency>
