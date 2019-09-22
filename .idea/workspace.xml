@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9e013e-fdad-4f7d-9ea6-4737e047f646" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sindaryn/mockeri/service/DummyGraphQLApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +107,8 @@
       <workItem from="1568113497973" duration="7479000" />
       <workItem from="1568553503213" duration="3098000" />
       <workItem from="1568811669700" duration="1247000" />
-      <workItem from="1568828244360" duration="2250000" />
+      <workItem from="1568828244360" duration="3063000" />
+      <workItem from="1569155419439" duration="320000" />
     </task>
     <servers />
   </component>
