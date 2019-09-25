@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
 import java.lang.reflect.Field;
+import java.net.URL;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
@@ -236,9 +237,10 @@ public class EntityMocker {
                 break;
             case "LocalDate" : setField(parent, field, testData.aLocalDate());
                 break;
-            case "URL" : setField(parent, field, randomFrom(testData.getWebsites()));
+            case "URL" : setField(parent, field, toUrlType(randomFrom(testData.getWebsites())));
         }
     }
+
     private void assignFromKeyword(Field field, Object parent) {
         switch (field.getAnnotation(MockData.class).keyword()){
             case PAST_DATE: setField(parent, field, testData.pastDate());

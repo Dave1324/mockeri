@@ -38,6 +38,14 @@ public class StaticUtils {
         }
     }
 
+    public static URL toUrlType(String urlString) {
+        try {
+            return new URL(urlString);
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+    }
+
     public static String randomString(){
         return randomString(23);
     }

@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce9e013e-fdad-4f7d-9ea6-4737e047f646" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sindaryn/mockeri/generator/DatabasePopulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sindaryn/mockeri/generator/DatabasePopulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sindaryn/mockeri/generator/EntityMocker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sindaryn/mockeri/generator/EntityMocker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sindaryn/mockeri/meta/FieldMetaInfoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sindaryn/mockeri/meta/FieldMetaInfoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/StaticUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/annotations/CompositeEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/annotations/MockData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/annotations/MockEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/annotations/NonMockable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/annotations/NonNullable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/annotations/SingletonTestValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/DatabasePopulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/EntitiesInfoCache.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/EntityMocker$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/EntityMocker$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/EntityMocker$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/EntityMocker$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/EntityMocker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/generator/TestDataGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/meta/Args.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/meta/CircularReferenceException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/meta/CollectionInstantiator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/meta/FieldMetaInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/meta/FieldMetaInfoFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/meta/FieldReferenceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/meta/MockDataSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/service/CustomKeywords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/service/CustomizedMockers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/service/KEYWORD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/service/MockFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/service/NullCustomKeywords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sindaryn/mockeri/service/NullMockFactory.class" beforeDir="false" />
-    </list>
+    <list default="true" id="ce9e013e-fdad-4f7d-9ea6-4737e047f646" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +106,7 @@
       <workItem from="1568828244360" duration="3063000" />
       <workItem from="1569155419439" duration="1581000" />
       <workItem from="1569335706982" duration="602000" />
-      <workItem from="1569411870369" duration="1944000" />
+      <workItem from="1569411870369" duration="2236000" />
     </task>
     <servers />
   </component>
