@@ -6,6 +6,7 @@ org/sindaryn/mockeri/annotations/NonMockable.class
 org/sindaryn/mockeri/service/MockFactory.class
 org/sindaryn/mockeri/meta/FieldMetaInfoFactory.class
 org/sindaryn/mockeri/annotations/NonNullable.class
+org/sindaryn/mockeri/service/DummyGraphQLApi.class
 org/sindaryn/mockeri/generator/EntityMocker$2.class
 org/sindaryn/mockeri/generator/TestDataGenerator.class
 org/sindaryn/mockeri/meta/CollectionInstantiator.class

@@ -15,7 +15,7 @@
     <version>0.0.1</version>
 
     <properties>
-        <apifi.version>878e148</apifi.version>
+        <apifi.version>950bb79</apifi.version>
         <apache-commons-lang.version>2.6</apache-commons-lang.version>
         <invitrode.version>12e5d68</invitrode.version>
         <javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>

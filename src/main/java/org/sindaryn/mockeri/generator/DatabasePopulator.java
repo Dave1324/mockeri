@@ -1,6 +1,7 @@
 package org.sindaryn.mockeri.generator;
 
-import org.sindaryn.apifi.annotations.GraphQLApiEntity;
+
+import org.sindaryn.apifi.annotations.NonDirectlyExposable;
 import org.sindaryn.datafi.reflection.CachedEntityType;
 import org.sindaryn.datafi.reflection.ReflectionCache;
 import org.sindaryn.mockeri.annotations.CompositeEntity;
@@ -52,17 +53,9 @@ public class DatabasePopulator {
         return isPersistable(type.getClazz());
     }
     public static boolean isPersistable(Class<?> type) {
-        boolean isAnnotatedAsWeakEntity = type.isAnnotationPresent(CompositeEntity.class);
-        boolean isMarkedForDirectApiExposure =
-                (type.isAnnotationPresent(GraphQLApiEntity.class) &&
-                type.getAnnotation(GraphQLApiEntity.class).exposeDirectly());
-        if(isAnnotatedAsWeakEntity && isMarkedForDirectApiExposure) {
-            throw new IllegalArgumentException(
-                    "Make up your mind, you can't mark " + type.getSimpleName() +
-                    " entity as 'exposeDirectly = true' " +
-                    "and then annotate it with '@CompositeEntity'!");
-        }
-        if(isAnnotatedAsWeakEntity)
+        boolean isAnnotatedAsCompositeEntity = type.isAnnotationPresent(CompositeEntity.class);
+        boolean isMarkedForDirectApiExposure = !type.isAnnotationPresent(NonDirectlyExposable.class);
+        if(isAnnotatedAsCompositeEntity)
             return false;
         return isMarkedForDirectApiExposure;
     }

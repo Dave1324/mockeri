@@ -179,7 +179,8 @@ public class EntityMocker {
     }
 
     private void handleSingleForeignKeyCircularSelfReference(Field field, FieldMetaInfo fieldMetaInfo, Object value, Object parent) {
-        if (dataManager.count(field.getType()) <= 1) {
+        dataManager.setType(field.getType());
+        if (dataManager.count() <= 1) {
             if (!fieldMetaInfo.isOptional())
                 throwGeneralCircularReferenceException(field, parent);
             else return;
@@ -187,7 +188,7 @@ public class EntityMocker {
         //else
         Object parentId = getId(parent, reflectionCache);
         List<Object> allValues =
-                                (List<Object>) dataManager.findAll(field.getType()).stream()
+                                (List<Object>) dataManager.findAll().stream()
                                 .filter(_value -> !getId(_value, reflectionCache).equals(parentId))
                                 .collect(Collectors.toList());
         if(allValues.size() == 1) setField(parent, field, allValues.get(0));
@@ -325,7 +326,8 @@ public class EntityMocker {
         return stringBuilder.toString();
     }
     private <T> T preExistingInstance(Class<?> clazz, Map<String, Object> args) {
-        List<Object> preExistingInstances = dataManager.findAll(clazz);
+        dataManager.setType(clazz);
+        List<Object> preExistingInstances = dataManager.findAll();
         String indentation = indentation((Stack)args.get(INSTANTIATION_STACK));
         if(preExistingInstances.isEmpty()) {
             log( indentation + "Cannot find previous instance of " + clazz.getSimpleName() + " to assign, assigning null value.");

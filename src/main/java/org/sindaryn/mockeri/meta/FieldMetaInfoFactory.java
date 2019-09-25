@@ -1,7 +1,8 @@
 package org.sindaryn.mockeri.meta;
 
-import org.sindaryn.datafi.annotations.NonCascadeUpdatable;
-import org.sindaryn.datafi.annotations.NonCascadeUpdatables;
+
+import org.sindaryn.datafi.annotations.NonApiUpdatable;
+import org.sindaryn.datafi.annotations.NonApiUpdatables;
 import org.sindaryn.datafi.reflection.ReflectionCache;
 import org.sindaryn.mockeri.annotations.MockData;
 import org.sindaryn.mockeri.annotations.NonMockable;
@@ -47,10 +48,10 @@ public class FieldMetaInfoFactory {
 
     private boolean determineUpdatability(Field field, Object parent) {
         return !(field.isAnnotationPresent(Column.class) && !field.getAnnotation(Column.class).updatable()) &&
-               !field.isAnnotationPresent(NonCascadeUpdatable.class) &&
+               !field.isAnnotationPresent(NonApiUpdatable.class) &&
                !(
-                   parent.getClass().isAnnotationPresent(NonCascadeUpdatables.class) &&
-                   Arrays.asList(parent.getClass().getAnnotation(NonCascadeUpdatables.class).value())
+                   parent.getClass().isAnnotationPresent(NonApiUpdatables.class) &&
+                   Arrays.asList(parent.getClass().getAnnotation(NonApiUpdatables.class).value())
                            .contains(field.getName())
                ) &&
                 !field.isAnnotationPresent(Id.class) && !field.isAnnotationPresent(EmbeddedId.class);
