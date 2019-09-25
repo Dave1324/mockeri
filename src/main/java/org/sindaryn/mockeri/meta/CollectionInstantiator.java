@@ -107,7 +107,8 @@ public class CollectionInstantiator {
         try{
             return new URL("https://www.google.com/");
         }catch (Exception e){
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
 }

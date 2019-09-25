@@ -214,7 +214,8 @@ public class FieldMetaInfoFactory {
             field.setAccessible(true);
             field.set(parent, collectionInstantiator.instantiateCollection(field.getType(), collectibleType(field, reflectionCache)));
         }catch (Exception e){
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
 

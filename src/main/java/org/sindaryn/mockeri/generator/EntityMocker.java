@@ -315,7 +315,8 @@ public class EntityMocker {
             field.setAccessible(true);
             field.set(parent, value);
         }catch (Exception e){
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
     private final static Logger logger = Logger.getLogger(EntityMocker.class);

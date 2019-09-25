@@ -34,7 +34,8 @@ public class StaticUtils {
             InputStream inputStream = resource.getInputStream();
             return new BufferedReader(new InputStreamReader(inputStream));
         } catch(Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
 
@@ -42,7 +43,8 @@ public class StaticUtils {
         try {
             return new URL(urlString);
         }catch (Exception e){
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
 
@@ -107,7 +109,8 @@ public class StaticUtils {
             if(!isCollectionOrMap) return false;
             return field.getField().isAnnotationPresent(ElementCollection.class);
         }catch (Exception e){
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
     public static boolean isId(Field type){
@@ -125,7 +128,8 @@ public class StaticUtils {
             String simpleTypeName = nameWithPackage.substring(start);
             return reflectionCache.getEntitiesCache().get(simpleTypeName).getClazz();
         } catch (NoSuchMethodException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
 
@@ -139,7 +143,8 @@ public class StaticUtils {
             start = nameWithPackage.lastIndexOf(".") + 1;
             return nameWithPackage.substring(start);
         } catch (NoSuchMethodException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+throw new RuntimeException(e);
         }
     }
 
