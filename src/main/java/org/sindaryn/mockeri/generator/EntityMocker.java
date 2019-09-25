@@ -102,7 +102,7 @@ public class EntityMocker {
         if(instantiationStack.contains(clazz))
             return preExistingInstance(clazz, args);
         final String indentation = indentation(instantiationStack);
-        log(indentation + "Instantiating " + clazz.getSimpleName());
+        log(indentation + "Instantiating " + clazz.getSimpleName() + "...");
         Object instance = genDefaultInstance(clazz);
         instantiationStack.push(clazz);
         getClassFields(clazz).forEach(field -> assignFieldValue(field, instance, args));
