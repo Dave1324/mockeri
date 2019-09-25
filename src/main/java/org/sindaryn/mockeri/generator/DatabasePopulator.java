@@ -64,6 +64,9 @@ public class DatabasePopulator {
         try{
             for (int i = 0; i < amountToAdd; i++)
                 entityMocker.instantiateEntity(name);
-        }catch (Exception e){}
+        }catch (Exception e){
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
     }
 }
