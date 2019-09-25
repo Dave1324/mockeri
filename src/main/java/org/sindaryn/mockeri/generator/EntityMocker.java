@@ -108,8 +108,7 @@ public class EntityMocker {
         getClassFields(clazz).forEach(field -> assignFieldValue(field, instance, args));
         instantiationStack.pop();
         if (args.get(NO_PERSIST) == null) {
-            log(indentation + "Persisting instance of " + clazz.getSimpleName() + ": " +
-                    instance.toString().replaceAll("[\n]", " "));
+            log(indentation + "Persisting " + instance.toString().replaceAll("[\n]", " "));
             dataManager.setType(clazz);
             return (T) dataManager.save(instance);
         } else {
