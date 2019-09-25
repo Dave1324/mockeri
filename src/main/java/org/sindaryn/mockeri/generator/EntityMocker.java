@@ -109,6 +109,7 @@ public class EntityMocker {
         instantiationStack.pop();
         if (args.get(NO_PERSIST) == null) {
             log(indentation + "Persisting instance of " + clazz.getSimpleName());
+            dataManager.setType(clazz);
             return (T) dataManager.save(instance);
         } else {
             log(indentation + "Returning transient instance of " + clazz.getSimpleName());
