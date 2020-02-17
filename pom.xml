@@ -5,23 +5,32 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.sindaryn</groupId>
-        <artifactId>Odhron</artifactId>
-        <version>0.0.1-POM</version>
+        <groupId>dev.sanda</groupId>
+        <artifactId>Sensei</artifactId>
+        <version>0.0.3</version>
         <relativePath/>
     </parent>
 
     <artifactId>mockeri</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <properties>
-        <apifi.version>7b0349d</apifi.version>
+        <datafi.version>0.0.3</datafi.version>
         <apache-commons-lang.version>2.6</apache-commons-lang.version>
         <invitrode.version>12e5d68</invitrode.version>
         <javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>
+        <spring-core.version>5.2.3.RELEASE</spring-core.version>
     </properties>
 
     <dependencies>
+
+
+        <dependency>
+            <groupId>dev.sanda</groupId>
+            <artifactId>datafi</artifactId>
+            <version>${datafi.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
@@ -32,19 +41,16 @@
             <artifactId>invitrode</artifactId>
             <version>${invitrode.version}</version>
         </dependency>
-
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>${apache-commons-lang.version}</version>
         </dependency>
-
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-
         <dependency>
             <groupId>javax.interceptor</groupId>
             <artifactId>javax.interceptor-api</artifactId>
@@ -52,9 +58,11 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Dave1324</groupId>
-            <artifactId>apifi</artifactId>
-            <version>${apifi.version}</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring-core.version}</version>
         </dependency>
+
+
     </dependencies>
 </project>

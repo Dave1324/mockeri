@@ -21,7 +21,7 @@ Mockeri expedites API development by simplifying the process of populating a giv
 Mockeri is available on maven central:
 ```
 <dependency>
-    <groupId>org.sindaryn</groupId>
+    <groupId>dev.sanda</groupId>
         <artifactId>mockeri</artifactId>
     <version>0.0.1</version>
 </dependency>
