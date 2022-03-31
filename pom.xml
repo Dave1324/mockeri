@@ -19,7 +19,7 @@
         <apache-commons-lang.version>2.6</apache-commons-lang.version>
         <invitrode.version>12e5d68</invitrode.version>
         <javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>
-        <spring-core.version>5.2.3.RELEASE</spring-core.version>
+        <spring-core.version>5.3.18</spring-core.version>
     </properties>
 
     <dependencies>
